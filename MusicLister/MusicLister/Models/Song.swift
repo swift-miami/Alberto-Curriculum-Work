@@ -12,9 +12,9 @@ import Foundation
 struct Song {
     //
     let trackName: String
-    let artist: String
-    let album: String
-    let genre: String
+    let trackArtist: String
+    let trackAlbum: String
+    let trackGenre: String
     let trackLength: String
 }
 
