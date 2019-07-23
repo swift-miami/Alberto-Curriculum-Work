@@ -10,21 +10,21 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    let myArray = [Song(trackName: "Sea Shanty 2", trackArtist: "Runescape", trackAlbum: "Port Sarim", trackGenre: "Kandarin", trackLength: "3:50"),
-                   Song(trackName: "Human Silence", trackArtist: "The Voidz", trackAlbum: "Null and Void", trackGenre: "Minimal", trackLength: "0:00"),
-                   Song(trackName: "Swing Life Away", trackArtist: "Rise Against", trackAlbum: "Siren Song of the Counter Culture", trackGenre: "Punk", trackLength: "3:16"),
-                   Song(trackName: "'Till I Collapse", trackArtist: "Eminem", trackAlbum: "The Eminem Show", trackGenre: "Rap", trackLength: "4:58"),
-                   Song(trackName: "Mountain Sound", trackArtist: "Of Monsters and Men", trackAlbum: "My Head is an Animal", trackGenre: "Indie Folk", trackLength: "3:31"),
-                   Song(trackName: "End of May", trackArtist: "Michael Buble", trackAlbum: "Crazy Love", trackGenre: "Pop Jazz", trackLength: "4:05"),
-                   Song(trackName: "Whatever It Takes", trackArtist: "Imagine Dragons", trackAlbum: "Evolve", trackGenre: "Rock", trackLength: "3:21"),
-                   Song(trackName: "Pallet Town", trackArtist: "Junichi Masuda", trackAlbum: "Pokemon Red/Blue", trackGenre: "Video Game", trackLength: "1:06"),
-                   Song(trackName: "U + Ur Hand", trackArtist: "P!nk", trackAlbum: "I'm Not Dead", trackGenre: "Pop", trackLength: "4:31"),
-                   Song(trackName: "Song", trackArtist: "Artist", trackAlbum: "Album", trackGenre: "Genre", trackLength: "2:32"),
-                   Song(trackName: "Give it All", trackArtist: "Rise Against", trackAlbum: "Siren Song of the Counter Culture", trackGenre: "Hard Rock", trackLength: "3:05"),
-                   Song(trackName: "Hakuna Matata", trackArtist: "Disney", trackAlbum: "Lion King", trackGenre: "Retro", trackLength: "3:20"),
-                   Song(trackName: "Thnks fr th Mmrs", trackArtist: "Fallout Boy", trackAlbum: "Infinity on High", trackGenre: "Rock", trackLength: "3:27"),
-                   Song(trackName: "Golden", trackArtist: "Fall Out Boy", trackAlbum: "Infinity On High", trackGenre: "Rock", trackLength: "3:43"),
-                   Song(trackName: "Fly Me to the Moon", trackArtist: "Frank Sinatra", trackAlbum: "It Might as Well Be Swing", trackGenre: "Jazz", trackLength: "2:31")]
+    let myArray = [Song(name: "Sea Shanty 2", artist: "Runescape", album: "Port Sarim", genre: "Kandarin", length: "3:50"),
+                   Song(name: "Human Silence", artist: "The Voidz", album: "Null and Void", genre: "Minimal", length: "0:00"),
+                   Song(name: "Swing Life Away", artist: "Rise Against", album: "Siren Song of the Counter Culture", genre: "Punk", length: "3:16"),
+                   Song(name: "'Till I Collapse", artist: "Eminem", album: "The Eminem Show", genre: "Rap", length: "4:58"),
+                   Song(name: "Mountain Sound", artist: "Of Monsters and Men", album: "My Head is an Animal", genre: "Indie Folk", length: "3:31"),
+                   Song(name: "End of May", artist: "Michael Buble", album: "Crazy Love", genre: "Pop Jazz", length: "4:05"),
+                   Song(name: "Whatever It Takes", artist: "Imagine Dragons", album: "Evolve", genre: "Rock", length: "3:21"),
+                   Song(name: "Pallet Town", artist: "Junichi Masuda", album: "Pokemon Red/Blue", genre: "Video Game", length: "1:06"),
+                   Song(name: "U + Ur Hand", artist: "P!nk", album: "I'm Not Dead", genre: "Pop", length: "4:31"),
+                   Song(name: "Song", artist: "Artist", album: "Album", genre: "Genre", length: "2:32"),
+                   Song(name: "Give it All", artist: "Rise Against", album: "Siren Song of the Counter Culture", genre: "Hard Rock", length: "3:05"),
+                   Song(name: "Hakuna Matata", artist: "Disney", album: "Lion King", genre: "Retro", length: "3:20"),
+                   Song(name: "Thnks fr th Mmrs", artist: "Fallout Boy", album: "Infinity on High", genre: "Rock", length: "3:27"),
+                   Song(name: "Golden", artist: "Fall Out Boy", album: "Infinity On High", genre: "Rock", length: "3:43"),
+                   Song(name: "Fly Me to the Moon", artist: "Frank Sinatra", album: "It Might as Well Be Swing", genre: "Jazz", length: "2:31")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

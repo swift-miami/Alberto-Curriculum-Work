@@ -76,11 +76,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="trackAlbum" destination="lO0-aR-KwY" id="B6a-Yz-bBz"/>
-                                    <outlet property="trackArtist" destination="dEj-dv-fR9" id="9t4-5j-rk3"/>
-                                    <outlet property="trackGenre" destination="ska-LB-QZn" id="uYT-Ft-SAp"/>
-                                    <outlet property="trackName" destination="wed-Lg-qj7" id="PO3-wD-OP3"/>
-                                    <outlet property="trackTime" destination="AE2-fS-dEd" id="0ku-q9-fNw"/>
+                                    <outlet property="album" destination="lO0-aR-KwY" id="B6a-Yz-bBz"/>
+                                    <outlet property="artist" destination="dEj-dv-fR9" id="9t4-5j-rk3"/>
+                                    <outlet property="genre" destination="ska-LB-QZn" id="uYT-Ft-SAp"/>
+                                    <outlet property="length" destination="AE2-fS-dEd" id="0ku-q9-fNw"/>
+                                    <outlet property="name" destination="wed-Lg-qj7" id="PO3-wD-OP3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

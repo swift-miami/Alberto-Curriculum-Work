@@ -11,17 +11,17 @@ import UIKit
 
 class SongTableViewCell: UITableViewCell {
     static let identifier = String(describing: SongTableViewCell.self)
-    @IBOutlet weak var trackName: UILabel!
-    @IBOutlet weak var trackArtist: UILabel!
-    @IBOutlet weak var trackAlbum: UILabel!
-    @IBOutlet weak var trackGenre: UILabel!
-    @IBOutlet weak var trackTime: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var artist: UILabel!
+    @IBOutlet weak var album: UILabel!
+    @IBOutlet weak var genre: UILabel!
+    @IBOutlet weak var length: UILabel!
     
     func configure(_ song: Song) {
-        trackName?.text = song.trackName
-        trackAlbum?.text = song.trackAlbum
-        trackArtist?.text = song.trackArtist
-        trackGenre?.text = song.trackGenre
-        trackTime?.text = song.trackLength
+        name?.text = song.name
+        album?.text = song.album
+        artist?.text = song.artist
+        genre?.text = song.genre
+        length?.text = song.length
     }
 }
