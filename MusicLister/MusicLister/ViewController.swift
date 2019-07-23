@@ -8,17 +8,6 @@
 
 import UIKit
 
-class SongTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var trackName: UILabel!
-    @IBOutlet weak var trackArtist: UILabel!
-    @IBOutlet weak var trackAlbum: UILabel!
-    @IBOutlet weak var trackGenre: UILabel!
-    @IBOutlet weak var trackTime: UILabel!
-    
-    
-}
-
 class ViewController: UITableViewController {
 
     let myArray = [Song(trackName: "Sea Shanty 2", trackArtist: "Runescape", trackAlbum: "Port Sarim", trackGenre: "Kandarin", trackLength: "3:50"),
@@ -37,15 +26,13 @@ class ViewController: UITableViewController {
                    Song(trackName: "Golden", trackArtist: "Fall Out Boy", trackAlbum: "Infinity On High", trackGenre: "Rock", trackLength: "3:43"),
                    Song(trackName: "Fly Me to the Moon", trackArtist: "Frank Sinatra", trackAlbum: "It Might as Well Be Swing", trackGenre: "Jazz", trackLength: "2:31")]
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        tableView.dataSource = self
-        tableView.delegate = self
-
-        
+        return tableView.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,19 +40,10 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "songcell", for: indexPath) as! SongTableViewCell
-        cell.trackName?.text = myArray[indexPath.row].trackName
-        cell.trackAlbum?.text = myArray[indexPath.row].trackAlbum
-        cell.trackArtist?.text = myArray[indexPath.row].trackArtist
-        cell.trackGenre?.text = myArray[indexPath.row].trackGenre
-        cell.trackTime?.text = myArray[indexPath.row].trackLength
+        let cell = tableView.dequeueReusableCell(withIdentifier: SongTableViewCell.identifier, for: indexPath) as! SongTableViewCell
+        let song = myArray[indexPath.row]
+        cell.configure(song)
         return cell
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        return tableView.reloadData()
-    }
-
 }
 

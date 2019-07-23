@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3038D6622E4EE2500118326 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3038D6522E4EE2500118326 /* Song.swift */; };
+		D3038D6922E6A1E100118326 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3038D6822E6A1E100118326 /* SongTableViewCell.swift */; };
 		D3FDA7EE22C9ADE7002EB4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDA7ED22C9ADE7002EB4AB /* AppDelegate.swift */; };
 		D3FDA7F022C9ADE7002EB4AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDA7EF22C9ADE7002EB4AB /* ViewController.swift */; };
 		D3FDA7F322C9ADE7002EB4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FDA7F122C9ADE7002EB4AB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D3038D6522E4EE2500118326 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D3038D6822E6A1E100118326 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		D3FDA7EA22C9ADE7002EB4AB /* MusicLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FDA7ED22C9ADE7002EB4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3FDA7EF22C9ADE7002EB4AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D3038D6722E6A19000118326 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3038D6822E6A1E100118326 /* SongTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D3FDA7E122C9ADE7002EB4AB = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		D3FDA7EC22C9ADE7002EB4AB /* MusicLister */ = {
 			isa = PBXGroup;
 			children = (
+				D3038D6722E6A19000118326 /* Views */,
 				D3038D6422E1632800118326 /* Models */,
 				D3FDA7ED22C9ADE7002EB4AB /* AppDelegate.swift */,
 				D3FDA7EF22C9ADE7002EB4AB /* ViewController.swift */,
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3038D6922E6A1E100118326 /* SongTableViewCell.swift in Sources */,
 				D3038D6622E4EE2500118326 /* Song.swift in Sources */,
 				D3FDA7F022C9ADE7002EB4AB /* ViewController.swift in Sources */,
 				D3FDA7EE22C9ADE7002EB4AB /* AppDelegate.swift in Sources */,
