@@ -6,7 +6,6 @@
 //  Copyright © 2019 Alberto Camacho. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class SongTableViewCell: UITableViewCell {
@@ -17,7 +16,7 @@ class SongTableViewCell: UITableViewCell {
     @IBOutlet weak var genre: UILabel!
     @IBOutlet weak var length: UILabel!
     
-    func configure(_ song: Song) {
+    func configure(with song: Song) {
         name?.text = song.name
         album?.text = song.album
         artist?.text = song.artist
