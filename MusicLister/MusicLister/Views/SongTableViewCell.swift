@@ -17,6 +17,8 @@ class SongTableViewCell: UITableViewCell {
     @IBOutlet weak var length: UILabel!
     
     func configure(with song: Song) {
+        accessoryType = song.favorite ? .checkmark : .none
+        
         name?.text = song.name
         album?.text = song.album
         artist?.text = song.artist

@@ -14,4 +14,5 @@ struct Song {
     let album: String
     let genre: String
     let length: String
+    var favorite: Bool
 }
