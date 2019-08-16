@@ -60,4 +60,20 @@ class ViewController: UITableViewController {
         let configuration = UISwipeActionsConfiguration(actions: [favoriteAction])
         return configuration
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let title = NSLocalizedString("Delete", comment: "Delete")
+        
+        let deleteAction = UIContextualAction(style: .normal, title: title, handler: {_, _, completionHandler in
+            self.myArray.remove(at: indexPath.row)
+            DispatchQueue.main.async {
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+            completionHandler(true)
+        })
+        
+        deleteAction.backgroundColor = .red
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
+    }
 }
