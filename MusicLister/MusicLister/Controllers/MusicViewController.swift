@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class MusicViewController: UITableViewController {
 
     var myArray = [Song(name: "Sea Shanty 2", artist: "Runescape", album: "Port Sarim", genre: "Kandarin", length: "3:50", favorite: false),
                    Song(name: "Human Silence", artist: "The Voidz", album: "Null and Void", genre: "Minimal", length: "0:00", favorite: false),
