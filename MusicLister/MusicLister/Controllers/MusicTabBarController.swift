@@ -10,4 +10,20 @@ import UIKit
 
 class MusicTabBarController: UITabBarController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupControllers()
+    }
+    
+    func setupControllers() -> Void {
+        let musicController = MusicViewController()
+        
+        let favoritesController = FavoriteMusicViewController()
+        
+        let viewControllerArray: [UIViewController] = [musicController, favoritesController]
+
+        viewControllers = viewControllerArray
+        
+    }
 }

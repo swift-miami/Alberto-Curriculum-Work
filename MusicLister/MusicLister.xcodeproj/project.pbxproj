@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D3038D6622E4EE2500118326 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3038D6522E4EE2500118326 /* Song.swift */; };
 		D3038D6922E6A1E100118326 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3038D6822E6A1E100118326 /* SongTableViewCell.swift */; };
+		D30820CB230BAD44004680A8 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30820CA230BAD44004680A8 /* FavoriteTableViewCell.swift */; };
 		D3FDA7EE22C9ADE7002EB4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDA7ED22C9ADE7002EB4AB /* AppDelegate.swift */; };
 		D3FDA7F022C9ADE7002EB4AB /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FDA7EF22C9ADE7002EB4AB /* MusicViewController.swift */; };
 		D3FDA7F322C9ADE7002EB4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FDA7F122C9ADE7002EB4AB /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		D3038D6522E4EE2500118326 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		D3038D6822E6A1E100118326 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		D30820CA230BAD44004680A8 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		D3FDA7EA22C9ADE7002EB4AB /* MusicLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FDA7ED22C9ADE7002EB4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3FDA7EF22C9ADE7002EB4AB /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				D3038D6822E6A1E100118326 /* SongTableViewCell.swift */,
+				D30820CA230BAD44004680A8 /* FavoriteTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				D3FE6C2D230A46C000D568A1 /* MusicTabBarController.swift in Sources */,
 				D3038D6622E4EE2500118326 /* Song.swift in Sources */,
 				D3FDA7F022C9ADE7002EB4AB /* MusicViewController.swift in Sources */,
+				D30820CB230BAD44004680A8 /* FavoriteTableViewCell.swift in Sources */,
 				D3FDA7EE22C9ADE7002EB4AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
